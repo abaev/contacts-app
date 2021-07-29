@@ -10,7 +10,6 @@ class App extends React.Component {
   render() {
     return (
       <div>
-        Ale APP
         <Switch>
           <Route path="/login">
             <Login />

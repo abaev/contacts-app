@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "name": "user1",
+      "password": "pass1",
+      "cookie": "cookie1"
+    }
+  ],
+
+  "contacts": [
+    {
+      "id": 1,
+      "type": "phone",
+      "countryCode": "RU",
+      "contact": "8 (999) 999 99-99",
+      "userID": 1
+    },
+    
+    {
+      "id": 2,
+      "type": "phone",
+      "countryCode": "RU",
+      "contact": "8 (999) 999 99-88",
+      "userID": 2
+    }
+  ]
+}
