@@ -22,9 +22,10 @@ function auth(req, res, next) {
 // Если пароль верный, устанавливаем куки, если нет - отвечаем 401
 function login(req, res, next) {
   const db = router.db; //lowdb instance
+  const { name, password } = req.query;
 
   let user = db.get('users').value()
-    .find(u => u.password === req.query.password);
+    .find(u => u.password === password && u.name === name);
   
     if(user) {
       res.cookie('contactsAuth', user.cookie);
