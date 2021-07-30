@@ -1,4 +1,3 @@
-import React from 'react';
 import {
   Switch,
   Route
@@ -6,23 +5,22 @@ import {
 import Login from '@/components/login/Login';
 import Contacts from '@/components/contacts/Contacts';
 
-class App extends React.Component {
-  render() {
-    return (
-      <div>
-        <Switch>
-          <Route path="/login">
-            <Login />
-          </Route>
-        </Switch>
+function App() {
+  return (
+    <div>
+      <Switch>
+        <Route path="/login">
+          <Login />
+        </Route>
+      </Switch>
 
-        <Switch>
-          <Route path="/contacts">
-            <Contacts />
-          </Route>
-        </Switch>
-      </div>);
-  }
+      <Switch>
+        <Route path="/contacts">
+          <Contacts />
+        </Route>
+      </Switch>
+    </div>
+  );
 }
 
 export default App;
