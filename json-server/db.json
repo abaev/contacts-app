@@ -7,22 +7,54 @@
       "cookie": "cookie1"
     }
   ],
-
   "contacts": [
     {
-      "id": 1,
+      "id": 4,
       "type": "phone",
       "countryCode": "RU",
-      "contact": "8 (999) 999 99-99",
-      "userID": 1
-    },
-    
-    {
-      "id": 2,
-      "type": "phone",
-      "countryCode": "RU",
-      "contact": "8 (999) 999 99-88",
+      "contact": "8 (999) 999 99-87",
       "userID": 2
+    },
+    {
+      "id": 5
+    },
+    {
+      "id": 6
+    },
+    {
+      "id": 7
+    },
+    {
+      "id": 8
+    },
+    {
+      "id": 9
+    },
+    {
+      "type": "email",
+      "contact": "new@m.ru",
+      "userID": "1",
+      "id": 10
+    },
+    {
+      "type": "phone",
+      "contact": "+79841330644",
+      "countryCode": "RU",
+      "userID": "1",
+      "id": 11
+    },
+    {
+      "type": "phone",
+      "contact": "+79841330646",
+      "countryCode": "RU",
+      "userID": "1",
+      "id": 12
+    },
+    {
+      "type": "email",
+      "contact": "example1_email@gmail.com",
+      "userID": "1",
+      "id": 13
     }
   ]
 }

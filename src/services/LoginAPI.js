@@ -5,15 +5,16 @@ import buildQuery from '@/services/BuildQuery.js';
 
 const apiURL = 'http://localhost:3001';
 
-const Login = ({ name, password }) => {
+const loginAPI = ({ name, password }) => {
   return axios({
     method: 'GET',
     url: `${apiURL}/login`
       + buildQuery({ name, password }),
+    withCredentials: true
     // headers: {
     //   'Content-Type': 'application/json',
     // }
   });
 };
 
-export default Login;
+export default loginAPI;

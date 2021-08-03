@@ -11,15 +11,16 @@ function auth(req, res, next) {
   let user = db.get('users').value()
     .find(u => u.cookie === req.cookies.contactsAuth);
 
-    // Такого пользователя нет
+  // Такого пользователя нет
   if(!user) return res.status(401).send();
-
+  
   // Пользователь есть, продолжаем дальше
   next();
 }
 
 // Вход
-// Если пароль верный, устанавливаем куки, если нет - отвечаем 401
+// Если пароль верный, устанавливаем куки и отдаем userID,
+// если нет - отвечаем 401
 function login(req, res, next) {
   const db = router.db; //lowdb instance
   const { name, password } = req.query;
@@ -29,7 +30,7 @@ function login(req, res, next) {
   
     if(user) {
       res.cookie('contactsAuth', user.cookie);
-      return res.status(200).send('Вход - OK');
+      return res.status(200).send({ userID: user.id });
     
     } else return res.status(401).send();
 }

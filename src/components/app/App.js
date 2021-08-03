@@ -3,7 +3,7 @@ import {
   Route
 } from "react-router-dom";
 import Login from '@/components/login/Login';
-import Contacts from '@/components/contacts/Contacts';
+import ContactsList from '@/components/contacts/ContactsList';
 
 function App() {
   return (
@@ -15,8 +15,8 @@ function App() {
       </Switch>
 
       <Switch>
-        <Route path="/contacts">
-          <Contacts />
+        <Route path="/contacts/:userID">
+          <ContactsList />
         </Route>
       </Switch>
     </div>
