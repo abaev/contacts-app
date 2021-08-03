@@ -5,16 +5,15 @@
       "name": "user1",
       "password": "pass1",
       "cookie": "cookie1"
+    },
+    {
+      "id": 2,
+      "name": "user2",
+      "password": "pass2",
+      "cookie": "cookie2"
     }
   ],
   "contacts": [
-    {
-      "id": 4,
-      "type": "phone",
-      "countryCode": "RU",
-      "contact": "8 (999) 999 99-87",
-      "userID": 2
-    },
     {
       "id": 5
     },
@@ -55,6 +54,13 @@
       "contact": "example1_email@gmail.com",
       "userID": "1",
       "id": 13
+    },
+    {
+      "type": "phone",
+      "contact": "+79841330655",
+      "countryCode": "RU",
+      "userID": "2",
+      "id": 14
     }
   ]
 }
