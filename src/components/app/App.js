@@ -5,10 +5,11 @@ import {
 } from "react-router-dom";
 import Login from '@/components/login/Login';
 import ContactsList from '@/components/contacts/ContactsList';
+import React from "react";
 
 function App() {
   return (
-    <div>
+    <React.Fragment>
       <Switch>
         <Route path="/login">
           <Login />
@@ -36,7 +37,7 @@ function App() {
           <Redirect to="/contacts/:userID" />
         </Route>
       </Switch> */}
-    </div>
+    </React.Fragment>
   );
 }
 

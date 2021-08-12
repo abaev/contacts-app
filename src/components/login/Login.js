@@ -63,7 +63,7 @@ function Login() {
   });
 
   return (
-    <div>
+    <React.Fragment>
       <Box p={1} display="flex"
         minHeight="95vh">
         <Grid container 
@@ -148,7 +148,7 @@ function Login() {
           <Redirect to={`/contacts/${userID}`} />
         </Switch>
       }
-    </div>
+    </React.Fragment>
   );
 }
 

@@ -9,6 +9,7 @@ import phoneService from '@/services/PhoneService';
 import ContactButtons from '@/components/contacts/ContactButtons';
 import contactsAPI from '@/services/ContactsAPI';
 import EditContact from '@/components/contacts/EditContact';
+import React from 'react';
 
 function Contact({
   contact,
@@ -39,7 +40,7 @@ function Contact({
   }
 
   return (
-    <Box>
+    <React.Fragment>
       {editingID !== contact.id
         ?
         <Box display="flex" justifyContent="space-between"
@@ -66,7 +67,7 @@ function Contact({
           onCancelClick={onCancelEditClick}
           onEdit={onEdit} />
       }
-    </Box>
+    </React.Fragment>
   );
 }
 

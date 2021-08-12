@@ -125,7 +125,7 @@ function ContactsList() {
   }
 
   return (
-    <div>
+    <React.Fragment>
       <Box p={1} display="flex" minHeight="95vh">
         <Grid container 
           justifyContent="center">
@@ -189,7 +189,7 @@ function ContactsList() {
           <Redirect to="/login" />
         </Switch>
       }
-    </div>
+    </React.Fragment>
   );
 }
 
